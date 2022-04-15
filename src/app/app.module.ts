@@ -7,6 +7,7 @@ import { UserComponent } from './user/user.component';
 import { UsernameComponent } from './username/username.component';
 import { RepositoryComponent } from './repository/repository.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RepositoriesComponent } from './repositories/repositories.component';
     UserComponent,
     UsernameComponent,
     RepositoryComponent,
-    RepositoriesComponent
+    RepositoriesComponent,
+    DatePipe
   ],
   imports: [
     BrowserModule,
