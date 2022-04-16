@@ -7,9 +7,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class HttpService {
-  
 
-  constructor() { 
-
-  }
+  constructor() { }
 }
