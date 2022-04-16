@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsernameComponent } from './username/username.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
+import { SearchFormComponent } from './search-form/search-form.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { RepositoriesComponent } from './repositories/repositories.component';
     AppComponent,
     UsernameComponent,
     RepositoriesComponent,
+    SearchFormComponent,
   ],
   imports: [
     BrowserModule,
