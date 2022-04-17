@@ -1,0 +1,60 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header bg-secondary text-white">
+          <h3>Github User Search</h3>
+        </div>
+        <div class="card-body">
+          <form class="form-inline">
+            <div class="form-group col-md-8 mt-2">
+              <input  name="user" type="text" class="form-control" placeholder="Search the username of any github user!"name="username">
+              <div class="container">
+                  <input type="submit" value="Search" class="btn btn-secondary btn-sm mt-3"/>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="profile" class="container"> 
+  <div class="panel panel-default">
+    <div class="panel-heading mt-3">
+        <h3>{{profile.name}} <small>({{profile.login}})</small></h3>
+    </div>
+    <div class="col-sm-4 mt-2">
+      <p *ngIf="profile.bio">{{profile.bio}}</p>
+      <!-- <p>Date created:{{profile.created_at}}<p></p> -->
+    </div>
+
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-sm-3 mt-3">
+          <img src="{{profile.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
+        </div>
+        <div class="col-sm-4 container">
+          <div>
+            <P>
+              <span class="label label-default">{{profile.followers}} Followers</span>
+              <span class="label label-primary"> Following: {{profile.following}}</span>
+              <span class="label label-success"> Public Repos: {{profile.public_repos}} </span>
+            </P>
+            <p><a href="{{profile.html_url}}" target="_blank"class="btn btn-success btn-sm">View Profile on GitHub</a></p>
+            <div class="panel panel-default">
+              <h3 class="panel-title">Repositories</h3>
+            </div>
+            <!-- <div class="panel-body" *ngFor="let repo of repos">
+              <P>
+              </P>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
