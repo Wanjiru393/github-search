@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule} from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UsernameComponent } from './username/username.component';
-import { RepositoriesComponent } from './repositories/repositories.component';
-import { SearchFormComponent } from './search-form/search-form.component';
+import { UsernameComponent } from './username-profile/username.component';
+import { RepositoriesComponent } from './github-repos/repositories.component';
+import { SearchFormComponent } from './github-search-form/search-form.component';
+
 
 
 @NgModule({
