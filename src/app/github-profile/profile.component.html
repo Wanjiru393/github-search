@@ -1,7 +1,10 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col">
-      <div class="card" id="main">
+      <div>
+        <img src="./assets/images/git8.png">
+      </div>
+      <div class="card mt-3">
         <div class="card-header text-black" id="top">
           <h3>Github User Search</h3>
         </div>
@@ -9,10 +12,11 @@
 
           <form class="form-inline" id="search-form">
             <div class="form-group col-md-8 mt-2">
-              <input  name="user" type="text" class="form-control" placeholder="Search the username of any github user!"name="username" [(ngModel)]="username" (keyup)="findProfile()">
-              <div class="container">
-                  <input type="submit" value="Search" class="btn btn-sm mt-3" id="click"/>
-              </div>
+              <input  name="user" type="text" class="form-control" placeholder="Search the username of any github user!" id="search"
+              name="username" [(ngModel)]="username" (keyup)="findProfile()">
+              <!-- <div class="container">
+                  <input type="submit" value="Search" class="btn btn-sm mt-3" id="click" />
+              </div> -->
             </div>
           </form>
 
@@ -41,20 +45,20 @@
         <div class="col-sm-4 container">
           <div class="flex flex-row">
             <!-- <p appHighlight>{{profile.name | case}}</p> -->
-            <P>
-              <span class="label label-default">{{profile.followers}} Followers</span>
-              <span class="label label-primary"> Following: {{profile.following}}</span>
-              <span class="label label-success"> Public Repos: {{profile.public_repos}} </span>
-            </P>
+            <h5>
+              <span class="details">{{profile.followers}} Followers</span>
+              <span class="details"> Following: {{profile.following}}</span>
+              <span class="details"> Public Repos: {{profile.public_repos}} </span>
+            </h5>
             <p><a href="{{profile.html_url}}" target="_blank"class="btn btn-success btn-sm">View Profile on GitHub</a></p>
             <div class="panel panel-default">
               <h2 appHighlight class="panel-title">Repositories</h2>
             </div>
             <div class="panel-body mt-4 flex flex-wrap " *ngFor="let repo of repos">
-              <P class="clearfix">
-                {{repo.name}}<a href="{{repo.html_url}}" target="_blank" class="btn btn-warning btn-sm pull-right">View Project</a>
+              <P class="clearfix" id="reponame">
+                {{repo.name}}
               </P>
-               <p>{{repo.description}}</p>
+               <p>{{repo.description}} <br><a href="{{repo.html_url}}" target="_blank" class="btn btn-warning btn-sm">View Project</a><br></p>
             </div>
           </div>
         </div>

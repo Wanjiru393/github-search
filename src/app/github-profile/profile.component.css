@@ -1,13 +1,30 @@
 img{
     border-radius: 150px;
 }
+#search{
+    padding-bottom: 10px;
+}
+p{
+    font-size: 15px;
+}
+details{
+    font-weight: bold;
+    color:aqua;
+}
+#reponame{
+    font-size: 30px;
+    font-weight: 700;
+    color:cyan;
+
+}
 #top{
     background-color:cyan;
+    
 }
 #click{
     background-color:aqua;
 }
 #main{
-    margin-top:280px;
+    align-items: center;
 
 }
