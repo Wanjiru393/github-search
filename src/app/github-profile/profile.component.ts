@@ -23,7 +23,7 @@ export class ProfileComponent implements OnInit {
     });
 
     this.httpService.getProfileRepos().subscribe(repos => {
-      // console.log(repos);
+      console.log(repos);
       this.repos = repos;
     });
   }
