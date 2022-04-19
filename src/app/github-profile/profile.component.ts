@@ -6,8 +6,9 @@ import { HttpService } from '../http.service';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class SearchFormComponent implements OnInit {
+export class ProfileComponent implements OnInit {
   profile: any;
+  repos: any;
 
 
 
@@ -15,14 +16,16 @@ export class SearchFormComponent implements OnInit {
     this.httpService.getProfileInfo().subscribe((profile: any) => {
       console.log(profile);
       this.profile = profile;
-    })
+    });
+
+    this.httpService.getProfileRepos().subscribe(repos => {
+      console.log(repos);
+      this.repos = repos;
+    });
+    
   }
-
-  // public searchUser(){
-
-  // }
-
   ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
 
 }

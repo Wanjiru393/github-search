@@ -5,7 +5,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RepositoriesComponent } from './github-repos/repositories.component';
-import { SearchFormComponent } from './github-profile/profile.component';
+import { ProfileComponent } from './github-profile/profile.component';
 import { HttpService } from './http.service';
 
 
@@ -14,7 +14,7 @@ import { HttpService } from './http.service';
   declarations: [
     AppComponent,
     RepositoriesComponent,
-    SearchFormComponent,
+    ProfileComponent,
     
   ],
   imports: [
