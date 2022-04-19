@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { RepositoriesComponent } from './github-repos/repositories.component';
 import { ProfileComponent } from './github-profile/profile.component';
 import { HttpService } from './http.service';
+import { CasePipe } from './case.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -15,6 +17,8 @@ import { HttpService } from './http.service';
     AppComponent,
     RepositoriesComponent,
     ProfileComponent,
+    CasePipe,
+    HighlightDirective,
     
   ],
   imports: [
