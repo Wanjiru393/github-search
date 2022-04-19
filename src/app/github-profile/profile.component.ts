@@ -11,8 +11,6 @@ export class ProfileComponent implements OnInit {
   repos: any;
   username!: string;
 
-
-
   constructor(private httpService: HttpService) {
     
     
