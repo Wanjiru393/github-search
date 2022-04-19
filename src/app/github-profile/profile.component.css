@@ -1,6 +1,13 @@
 img{
     border-radius: 150px;
 }
-card-header{
+#top{
+    background-color:cyan;
+}
+#click{
     background-color:aqua;
+}
+#main{
+    margin-top:280px;
+
 }
