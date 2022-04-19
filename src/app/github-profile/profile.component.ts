@@ -9,10 +9,17 @@ import { HttpService } from '../http.service';
 export class ProfileComponent implements OnInit {
   profile: any;
   repos: any;
+  username!: string;
 
 
 
   constructor(private httpService: HttpService) {
+    
+    
+  }
+
+  findProfile(){
+    this.httpService.updateProfile(this.username);
     this.httpService.getProfileInfo().subscribe((profile: any) => {
       console.log(profile);
       this.profile = profile;
@@ -22,8 +29,9 @@ export class ProfileComponent implements OnInit {
       console.log(repos);
       this.repos = repos;
     });
-    
   }
+
+
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
