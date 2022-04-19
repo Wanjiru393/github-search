@@ -5,7 +5,7 @@ import {ElementRef,Input,HostListener} from '@angular/core';
   selector: '[appHighlight]'
 })
 export class HighlightDirective {
-  textLight: any | undefined;
+  textDark: any | undefined;
 
   constructor(private elem:ElementRef) { }
 
@@ -13,10 +13,10 @@ export class HighlightDirective {
     this.textLight ("#777");
   }
   @HostListener('mouseleave') onMouseleave(){
-    this.textLight ("#fff");
+    this.textLight ("#000");
   }
-  // private textLight(action:string){
-  //   this.elem.nativeElement.style.color = action;
-  // }
+  private textLight(action:string){
+    this.elem.nativeElement.style.color = action;
+  }
 
 }
