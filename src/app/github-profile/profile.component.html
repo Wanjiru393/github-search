@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col">
       <div class="logo">
-        <img src="./assets/images/git8.png">
+        <img src="./assets/images/git8.png" height="300">
       </div>
       <div class="card mt-3">
         <div class="card-header text-black" id="top">
@@ -57,8 +57,9 @@
               <P class="clearfix" id="reponame">
                 {{repo.name}}
               </P>
-               <p *ngIf="repo.description">Description: {{repo.description}} <br><a href="{{repo.html_url}}" target="_blank" class="btn btn-warning btn-sm">View Project</a><br></p>
-               <p *ngIf="repo.language">Languages: {{repo.language}} <br>Forks:{{repo.forks_count}} <br></p>
+               <p *ngIf="repo.description">Description: {{repo.description}}</p>
+               <p>Languages: {{repo.language}} <br>Forks:{{repo.forks_count}} <br>
+              <br><a href="{{repo.html_url}}" target="_blank" class="btn btn-warning btn-sm">View Project</a><br></p>
             </div>
           </div>
         </div>
