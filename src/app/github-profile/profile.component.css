@@ -1,0 +1,37 @@
+img{
+    border-radius: 200px;
+}
+/* #search{
+    padding-bottom: 10px;
+} */
+p{
+    font-size: 15px;
+}
+details{
+    font-weight: bold;
+    color:aqua;
+}
+#reponame{
+    font-size: 30px;
+    font-weight: 800;
+    color:rgb(56, 175, 128);
+
+}
+
+#top{
+    background-color:rgb(75, 210, 201);
+    padding: 15px;  
+}
+span{
+    font-size: 20px;
+    margin-left: 5px;
+}
+/* #click{
+    background-color:aqua;
+} */
+#main{
+    align-items: center;
+}
+#search-form{
+    padding: 10px;
+}
